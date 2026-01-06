@@ -5,7 +5,7 @@ const features = [
   {
     icon: Award,
     title: "Quality Product",
-    description: "Rudra Equipment is built on a strong foundation of integrity, and our reputation for quality.",
+    description: "MetalHand Industrial Equipment is built on a strong foundation of integrity, and our reputation for quality.",
   },
   {
     icon: Wrench,
@@ -35,7 +35,7 @@ const FeaturesSection = () => {
 
       <div className="relative z-10 container mx-auto px-4">
         <h2 className="section-title text-center mb-4">
-          Leading Manufacturer of Pallet Truck
+          Material Handling Solutions 1–5 Tons
         </h2>
         <div className="section-divider mb-12" />
 

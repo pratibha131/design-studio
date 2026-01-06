@@ -21,8 +21,8 @@ const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center">
             <h1 className="text-2xl md:text-3xl font-heading font-bold">
-              <span className="text-primary">RUDRA</span>
-              <span className="text-foreground block text-sm font-normal tracking-wider">Equipment</span>
+              <span className="text-primary">MetalHand</span>
+              <span className="text-foreground block text-sm font-normal tracking-wider">Industrial equipment</span>
             </h1>
           </a>
 

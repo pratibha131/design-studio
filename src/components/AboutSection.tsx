@@ -9,13 +9,9 @@ const AboutSection = () => {
           <div className="section-divider mb-8" />
           
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            We are <span className="text-primary font-semibold">Rudra Equipment</span> and we love what we do. 
-            We are located in Ahmedabad. Established as Sole Proprietorship firm in the year 2015 
-            at Ahmedabad (Gujarat, India), we "Rudra Equipment" are a renowned Manufacturer of 
-            premium quality range of <span className="text-foreground">Hydraulic Hand Pallet Truck, Stacker, ETO Crane, 
-            Scissor Lift, etc.</span> We provide these products at reasonable prices and deliver these 
-            within the assured time-frame. Under the headship of "Mr. Chirag Patel" (Owner), 
-            we have achieved a noteworthy position in the market.
+            We are <span className="text-primary font-semibold">MetalHand Industrial Equipment</span> and we specialize in manufacturing high-quality material handling equipment.
+            Located at <span className="text-foreground">Asha Stores Ludhiana</span>, our products are designed with load capacities from 1 to 5 tons, including <span className="text-foreground">pallet jacks, lift tables, trolleys, and stackers</span>.
+            We are committed to providing reliable industrial solutions that meet the highest standards of quality and performance.
           </p>
 
           <div className="section-divider mb-8" />

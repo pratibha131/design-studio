@@ -8,8 +8,8 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-2xl font-heading font-bold mb-4">
-              <span className="text-primary">RUDRA</span>
-              <span className="text-foreground"> Equipment</span>
+              <span className="text-primary">MetalHand</span>
+              <span className="text-foreground"> Industrial Equipment</span>
             </h3>
             <p className="text-muted-foreground mb-4">
               Leading Manufacturer and Exporter of Material Handling Equipment since 2015.
@@ -51,19 +51,19 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-primary flex-shrink-0 mt-1" />
                 <span className="text-muted-foreground">
-                  Ahmedabad, Gujarat, India
+                  Asha Stores Ludhiana
                 </span>
               </li>
               <li>
-                <a href="tel:+917359465955" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+                <a href="tel:+919815175016" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                   <Phone size={20} className="text-primary" />
-                  +91 7359465955
+                  +91 9815175016
                 </a>
               </li>
               <li>
-                <a href="mailto:rudraequipment73@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+                <a href="mailto:boby0673@yahoo.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                   <Mail size={20} className="text-primary" />
-                  rudraequipment73@gmail.com
+                  boby0673@yahoo.com
                 </a>
               </li>
             </ul>
@@ -72,7 +72,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Rudra Equipment. All rights reserved.
+            © {new Date().getFullYear()} MetalHand Industrial Equipment. All rights reserved.
           </p>
         </div>
       </div>

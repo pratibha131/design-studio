@@ -1,11 +1,10 @@
-import { Button } from "@/components/ui/button";
-import ProductCard from "./ProductCard";
 import productPalletTruck from "@/assets/product-pallet-truck.jpg";
 import productStacker from "@/assets/product-stacker.jpg";
 import productScissorLift from "@/assets/product-scissor-lift.jpg";
 import productFloorCrane from "@/assets/product-floor-crane.jpg";
 import productDockRamp from "@/assets/product-dock-ramp.jpg";
 import productDrumTrolley from "@/assets/product-drum-trolley.jpg";
+import ProductCard from "./ProductCard";
 
 const products = [
   {
@@ -44,21 +43,10 @@ const ProductsSection = () => {
   return (
     <section id="products" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="section-title text-center">New Products</h2>
-        <div className="section-divider mb-4" />
-        
-        <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-4">
-          Leading Manufacturer and Exporter of Hydraulic Hand Pallet Truck, Stacker, 
-          ETO Crane, Scissor Lift, etc. and many more items from Ahmedabad.
-        </p>
-        
-        <div className="section-divider mb-8" />
-
-        <div className="flex justify-center mb-12">
-          <Button className="btn-primary">
-            See all products
-          </Button>
-        </div>
+        <h2 className="section-title text-center mb-4">
+          Our Products
+        </h2>
+        <div className="section-divider mb-12" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product, index) => (
