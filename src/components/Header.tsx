@@ -3,6 +3,46 @@ import { Menu, X, ShoppingCart, Search } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearch = () => {
+    if (searchQuery.trim()) {
+      // Scroll to products section
+      const productsSection = document.getElementById('products');
+      if (productsSection) {
+        productsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Simple search logic - check if product name contains search query
+      const products = [
+        "Mini Electric Stacker",
+        "Hand Pallet Truck",
+        "Fully Automatic Pallet Stackers",
+        "Battery Operated Stacker",
+        "Hydraulic Scissor Lift",
+        "Electric Floor Crane",
+        "Dock Ramp",
+        "Drum Trolley"
+      ];
+
+      const foundProduct = products.find(product =>
+        product.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+
+      if (foundProduct) {
+        alert(`Found product: ${foundProduct}`);
+      } else {
+        alert(`No product found matching: ${searchQuery}`);
+      }
+    }
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
 
   const navItems = [
     { label: "Home", href: "#" },
@@ -41,15 +81,37 @@ const Header = () => {
 
           {/* Icons */}
           <div className="flex items-center gap-4">
-            <button className="relative text-foreground hover:text-primary transition-colors">
-              <ShoppingCart size={22} />
-              <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">
-                0
-              </span>
-            </button>
-            <button className="text-foreground hover:text-primary transition-colors">
-              <Search size={22} />
-            </button>
+            <div className="relative">
+              {isSearchOpen && (
+                <div className="absolute right-0 top-0 flex items-center">
+                  <input
+                    type="text"
+                    placeholder="Search products..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyPress={handleKeyPress}
+                    className="w-64 px-4 py-2 bg-background border border-border rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                  <button
+                    onClick={handleSearch}
+                    className="ml-2 p-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+                  >
+                    <Search size={16} />
+                  </button>
+                </div>
+              )}
+              <button
+                className="text-foreground hover:text-primary transition-colors"
+                onClick={() => {
+                  setIsSearchOpen(!isSearchOpen);
+                  if (!isSearchOpen) {
+                    setSearchQuery("");
+                  }
+                }}
+              >
+                <Search size={22} />
+              </button>
+            </div>
 
             {/* Mobile Menu Button */}
             <button

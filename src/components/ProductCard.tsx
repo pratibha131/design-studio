@@ -1,10 +1,9 @@
 interface ProductCardProps {
   image: string;
   name: string;
-  price: string;
 }
 
-const ProductCard = ({ image, name, price }: ProductCardProps) => {
+const ProductCard = ({ image, name }: ProductCardProps) => {
   return (
     <div className="product-card bg-card group cursor-pointer">
       <div className="aspect-square overflow-hidden">
@@ -18,9 +17,6 @@ const ProductCard = ({ image, name, price }: ProductCardProps) => {
         <h3 className="font-heading font-semibold text-foreground text-lg mb-2 group-hover:text-primary transition-colors">
           {name}
         </h3>
-        <p className="text-primary font-bold">
-          {price}
-        </p>
       </div>
     </div>
   );

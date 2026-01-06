@@ -2,17 +2,23 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import heroImage from "@/assets/hero-warehouse.jpg";
 import productPalletTruck from "@/assets/product-pallet-truck.jpg";
+import productautomaticstacker from "@/assets/Fully Automatic Pallet Stackers.jpg";
 import productStacker from "@/assets/product-stacker.jpg";
+import productconveyor from "@/assets/conveyor-rollers.jpg";
 import productScissorLift from "@/assets/product-scissor-lift.jpg";
+import productmanual from "@/assets/manual_stacker.jpg";
 import productFloorCrane from "@/assets/product-floor-crane.jpg";
 import productDockRamp from "@/assets/product-dock-ramp.jpg";
 import productDrumTrolley from "@/assets/product-drum-trolley.jpg";
 
 const slides = [
   { image: heroImage, isBackground: true, name: "Material Handling Equipment", subtitle: "1–5 Tons Capacity" },
-  { image: productPalletTruck, isBackground: false, name: "Pallet Jacks", subtitle: "Premium Quality" },
+  { image: productPalletTruck, isBackground: false, name: "Hand Pallet Truck", subtitle: "Manual Operation" },
+  { image: productautomaticstacker, isBackground: false, name: "Fully Automatic Pallet Stackers", subtitle: "Automated Efficiency" },
   { image: productStacker, isBackground: false, name: "Stackers", subtitle: "High Performance" },
+  { image: productconveyor, isBackground: false, name: "Conveyor Roller Machine", subtitle: "Smooth Transport" },
   { image: productScissorLift, isBackground: false, name: "Lift Tables", subtitle: "Industrial Grade" },
+  { image: productmanual, isBackground: false, name: "Manual Stacker", subtitle: "Easy Handling" },
   { image: productFloorCrane, isBackground: false, name: "Trolleys", subtitle: "Heavy Duty" },
   { image: productDockRamp, isBackground: false, name: "Dock Ramp", subtitle: "Loading Solutions" },
   { image: productDrumTrolley, isBackground: false, name: "Drum Trolley", subtitle: "Easy Transport" },
@@ -78,8 +84,10 @@ const HeroSection = () => {
                     </h1>
                     <div className={`h-1 bg-primary mb-6 mx-auto lg:mx-0 ${slide.isBackground ? "w-24 mt-6" : "w-20"}`} />
                     {!slide.isBackground && (
-                      <button className="btn-primary mt-4">
-                        View Details
+                      <button
+                        className="btn-primary mt-4"
+                      >
+                        Get your Quotation
                       </button>
                     )}
                   </div>

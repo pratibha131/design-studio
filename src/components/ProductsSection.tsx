@@ -1,6 +1,9 @@
 import productPalletTruck from "@/assets/product-pallet-truck.jpg";
+import productautomaticstacker from "@/assets/Fully Automatic Pallet Stackers.jpg";
 import productStacker from "@/assets/product-stacker.jpg";
+import productconveyor from "@/assets/conveyor-rollers.jpg";
 import productScissorLift from "@/assets/product-scissor-lift.jpg";
+import productmanual from "@/assets/manual_stacker.jpg";
 import productFloorCrane from "@/assets/product-floor-crane.jpg";
 import productDockRamp from "@/assets/product-dock-ramp.jpg";
 import productDrumTrolley from "@/assets/product-drum-trolley.jpg";
@@ -9,33 +12,39 @@ import ProductCard from "./ProductCard";
 const products = [
   {
     image: productPalletTruck,
-    name: "Mini Electric Stacker",
-    price: "Rs.70,000.00",
+    name: "Hand Pallet Truck",
+  },
+  {
+    image: productautomaticstacker,
+    name: "Fully Automatic Pallet Stackers",
   },
   {
     image: productStacker,
     name: "Battery Operated Stacker",
-    price: "Rs.410,000.00",
+  },
+  {
+    image: productconveyor,
+    name: "Conveyor Roller Machine",
   },
   {
     image: productScissorLift,
     name: "Hydraulic Scissor Lift",
-    price: "Rs.45,000.00",
+  },
+  {
+    image: productmanual,
+    name: "Manual Stacker",
   },
   {
     image: productFloorCrane,
     name: "Electric Floor Crane",
-    price: "Rs.95,000.00",
   },
   {
     image: productDockRamp,
     name: "Dock Ramp",
-    price: "Rs.490,000.00",
   },
   {
     image: productDrumTrolley,
     name: "Drum Trolley",
-    price: "Rs.7,000.00",
   },
 ];
 
@@ -54,7 +63,6 @@ const ProductsSection = () => {
               key={index}
               image={product.image}
               name={product.name}
-              price={product.price}
             />
           ))}
         </div>
