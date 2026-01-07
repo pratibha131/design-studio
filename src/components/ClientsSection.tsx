@@ -1,14 +1,8 @@
 const clients = [
-  "TATA",
-  "Adani",
-  "Reliance",
-  "L&T",
-  "Godrej",
-  "Mahindra",
-  "Bajaj",
-  "JSW",
-  "Hindalco",
-  "UltraTech",
+  "Indian Army",
+  "Air Force",
+  "Government E Marketplace (GEM)",
+  "Defence",
 ];
 
 const ClientsSection = () => {
