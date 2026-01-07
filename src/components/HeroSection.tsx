@@ -11,10 +11,12 @@ import productmanual from "@/assets/manual_stacker.jpg";
 import productFloorCrane from "@/assets/product-floor-crane.jpg";
 import productDockRamp from "@/assets/product-dock-ramp.jpg";
 import productDrumTrolley from "@/assets/product-drum-trolley.jpg";
+import productpallet from "@/assets/hand_pallet.jpg";
 
 const slides = [
   { image: heroImage, isBackground: true, name: "Material Handling Equipment", subtitle: "1–5 Tons Capacity" },
-  { image: productPalletTruck, isBackground: false, name: "Hand Pallet Truck", subtitle: "Manual Operation" },
+  { image: productpallet, isBackground: false, name: "Hand Pallet Truck", subtitle: "Durable & Efficient" },
+  { image: productPalletTruck, isBackground: false, name: "Pallet Truck", subtitle: "Manual Operation" },
   { image: productautomaticstacker, isBackground: false, name: "Fully Automatic Pallet Stackers", subtitle: "Automated Efficiency" },
   { image: productStacker, isBackground: false, name: "Stackers", subtitle: "High Performance" },
   { image: productconveyor, isBackground: false, name: "Conveyor Roller Machine", subtitle: "Smooth Transport" },

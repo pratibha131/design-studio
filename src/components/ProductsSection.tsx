@@ -8,11 +8,16 @@ import productFloorCrane from "@/assets/product-floor-crane.jpg";
 import productDockRamp from "@/assets/product-dock-ramp.jpg";
 import productDrumTrolley from "@/assets/product-drum-trolley.jpg";
 import ProductCard from "./ProductCard";
+import productpallet from "@/assets/hand_pallet.jpg";
 
 const products = [
   {
-    image: productPalletTruck,
+    image: productpallet,
     name: "Hand Pallet Truck",
+  },
+  {
+    image: productPalletTruck,
+    name: "Pallet Truck",
   },
   {
     image: productautomaticstacker,
