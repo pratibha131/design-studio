@@ -49,9 +49,8 @@ const Header = () => {
     { label: "About us", href: "#about" },
     { label: "Services", href: "#services" },
     { label: "Products", href: "#products" },
-    { label: "Enquiry", href: "#enquiry" },
-    { label: "Contact", href: "#contact" },
-    { label: "Download", href: "#download" },
+    { label: "Enquiry", href: "#quote-section" },
+    { label: "Contact", href: "#contact" }
   ];
 
   return (

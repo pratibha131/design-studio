@@ -14,20 +14,7 @@ const Footer = () => {
             <p className="text-muted-foreground mb-4">
               Leading Manufacturer and Exporter of Material Handling Equipment since 2015.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
-                <Facebook size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
-                <Youtube size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
-                <Linkedin size={18} />
-              </a>
-            </div>
+            
           </div>
 
           {/* Quick Links */}

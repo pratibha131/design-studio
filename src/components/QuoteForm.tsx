@@ -18,11 +18,12 @@ const QuoteForm = ({ isOpen, onClose }: QuoteFormProps) => {
   });
 
   const products = [
-    "Mini Electric Stacker",
     "Hand Pallet Truck",
     "Fully Automatic Pallet Stackers",
     "Battery Operated Stacker",
+    "Conveyor Roller Machine",
     "Hydraulic Scissor Lift",
+    "Manual Stacker",
     "Electric Floor Crane",
     "Dock Ramp",
     "Drum Trolley",

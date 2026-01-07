@@ -16,3 +16,7 @@
 # TODO: Implement Search Functionality
 
 - [ ] Edit Header.tsx: Add search input and functionality to the search button
+
+# TODO: Add Videos to About Us Section
+
+- [ ] Edit AboutSection.tsx: Replace the current video with video1 from assets, and implement an auto-playing carousel for video2 and video3 in the same position

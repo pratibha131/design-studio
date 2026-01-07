@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import heroImage from "@/assets/hero-warehouse.jpg";
 import productPalletTruck from "@/assets/product-pallet-truck.jpg";
 import productautomaticstacker from "@/assets/Fully Automatic Pallet Stackers.jpg";
@@ -39,6 +40,14 @@ const HeroSection = () => {
 
   return (
     <section className="relative h-[85vh] overflow-hidden">
+      {/* Alert */}
+      <div className="absolute top-4 left-4 right-4 z-30">
+        <Alert>
+          <AlertDescription>
+            We deal with bulk and wholesale machines. Contact +91 9815175016 for getting best quotations.
+          </AlertDescription>
+        </Alert>
+      </div>
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -52,7 +61,7 @@ const HeroSection = () => {
             style={{ backgroundImage: `url(${heroImage})` }}
           >
             <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute inset-0 flex items-center">
+            <div className="absolute inset-0 flex items-center pt-32 sm:pt-28 md:pt-20 lg:pt-0">
               <div className="container mx-auto px-4 h-full">
                 <div className="grid lg:grid-cols-2 gap-8 h-full items-center">
                   {/* Left - Product Image (only for non-background slides) */}
@@ -86,6 +95,12 @@ const HeroSection = () => {
                     {!slide.isBackground && (
                       <button
                         className="btn-primary mt-4"
+                        onClick={() => {
+                          const quoteSection = document.getElementById('quote-section');
+                          if (quoteSection) {
+                            quoteSection.scrollIntoView({ behavior: 'smooth' });
+                          }
+                        }}
                       >
                         Get your Quotation
                       </button>
